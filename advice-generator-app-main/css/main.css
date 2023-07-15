@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #191d26;
+}
+
+.container {
+  width: 37.5em;
+  margin: 0 auto;
+  background-color: #3f4b61;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  margin-top: 18em;
+  align-items: center;
+}
+
+.dice {
+  width: 5em;
+}
+
+h3 {
+  color: hsl(150, 100%, 66%);
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+h1 {
+  color: white;
+  font-size: 2.8rem;
+  margin: 0 1em;
+  margin-bottom: 1em;
+}
+
+.pattern {
+  margin-bottom: 3em;
+}
+
+.dice {
+  width: 3em;
+  margin-bottom: -3.5em;
+}
+
+span {
+  width: 6em;
+  height: 6em;
+  text-align: center;
+
+  margin-bottom: -3em;
+  border-radius: 50%;
+  background-color: #4aff9b;
+}
+
+span:hover {
+  cursor: pointer;
+  box-shadow: 0 0 25px #4cff9b;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    width: auto;
+    max-width: 600px;
+  }
+
+  .ptn {
+    visibility: hidden;
+  }
+
+  h1 {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+  }
+
+  .pattern {
+    background-image: url(../images/pattern-divider-desktop.svg);
+    background-repeat: no-repeat;
+    margin-left: 5.5em;
+    width: 50em;
+  }
+}
